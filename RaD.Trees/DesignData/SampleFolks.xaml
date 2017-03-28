@@ -1,0 +1,23 @@
+﻿<local:PeopleViewModel 
+    xmlns:local="clr-namespace:RaD.Trees.ViewModels"
+    xmlns:models="clr-namespace:RaD.Trees.Models">
+    <local:PeopleViewModel.Folks>
+        <models:Person FirstName="Lester &amp; Debra" />
+        <models:Person FirstName="Roger" IsExpanded="True">
+            <models:Person.Children>
+                <models:Person FirstName="Alaina">
+                    <models:Person.Children>
+                        <models:Person FirstName="Kira" />
+                        <models:Person FirstName="Crystal" />
+                        <models:Person FirstName="Ballet" />
+                        <models:Person FirstName="Ella" />
+                        <models:Person FirstName="Toya" />
+                    </models:Person.Children>
+                </models:Person>
+                <models:Person FirstName="Marlie" />
+                <models:Person FirstName="Madison" />
+                <models:Person FirstName="Morgan" />
+            </models:Person.Children>
+        </models:Person>
+    </local:PeopleViewModel.Folks>
+</local:PeopleViewModel>
